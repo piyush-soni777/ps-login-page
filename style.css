@@ -456,7 +456,6 @@ h1 {
   transition: var(--transition-elastic);
   z-index: 100;
 }
-
 .overlay {
   background: linear-gradient(-135deg, rgba(99, 102, 241, 0.08) 0%, rgba(168, 85, 247, 0.12) 100%);
   backdrop-filter: blur(25px) saturate(120%);

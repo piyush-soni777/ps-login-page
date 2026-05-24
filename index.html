@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Space | login page (PiyushSoni)</title>
+  <meta name="description"
+    content="Experience the state-of-the-art glassmorphism portal featuring smooth elastic transitions, real-time input intelligence, and responsive spatial interfaces.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating animated plasma gradient spheres in the background -->
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Main interactive glassmorphism container card -->
+  <div class="container" id="mainContainer">
+
+    <!-- Sign Up Form (Left side initially hidden, moves right and fades in) -->
+    <div class="form-container sign-up-container">
+      <form id="signUpForm" autocomplete="off" novalidate>
+        <h1>Create Account</h1>
+        <p class="subtitle">Join our community and explore the universe</p>
+
+        <div class="social-container">
+          <button type="button" class="social-btn" aria-label="Sign Up with Google" id="googleSignUp">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114-3.23 0-5.854-2.624-5.854-5.854s2.624-5.854 5.854-5.854c1.47 0 2.8.544 3.82 1.436l3.078-3.078C18.877 3.327 15.73 2 12.24 2 6.584 2 2 6.584 2 12.24s4.584 10.24 10.24 10.24c5.795 0 10.24-4.114 10.24-10.24 0-.69-.07-1.353-.193-1.955H12.24z" />
+            </svg>
+          </button>
+          <button type="button" class="social-btn" aria-label="Sign Up with GitHub" id="githubSignUp">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </button>
+          <button type="button" class="social-btn" aria-label="Sign Up with Apple" id="appleSignUp">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M17.05 20.28c-.98.95-2.05 1.88-3.08 1.88-1.02 0-1.4-.62-2.52-.62-1.13 0-1.55.6-2.5.62-1.02.02-2.2-.99-3.2-1.9-2.02-1.89-3.56-5.32-3.56-8.52 0-5.07 3.3-7.75 6.42-7.75 1.05 0 2.03.39 2.68.74.65.35 1.48.74 2.37.74.88 0 1.58-.34 2.27-.72.82-.47 1.95-.91 3.22-.64.53.22 2 .85 2.94 2.24a.26.26 0 0 1-.1.35c-1.39.81-2.24 2.12-2.24 3.75s1.08 2.85 2.45 3.52c.07.03.11.1.08.18-.46 1.34-1.51 3.12-2.51 4.1zm-3.32-15.65c.8-1 1.32-2.39 1.13-3.73-.02-.1-.1-.17-.2-.15-1.3.1-2.58.89-3.23 1.72-.75.92-1.23 2.3-1.02 3.63.02.1.1.16.2.14 1.25-.09 2.39-.81 3.12-1.61z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="divider">
+          <span>or use email</span>
+        </div>
+
+        <div class="input-group" id="signUpNameGroup">
+          <input type="text" id="signUpName" required placeholder=" ">
+          <label for="signUpName">Full Name</label>
+          <div class="error-message">Please enter your full name</div>
+        </div>
+
+        <div class="input-group" id="signUpEmailGroup">
+          <input type="email" id="signUpEmail" required placeholder=" ">
+          <label for="signUpEmail">Email Address</label>
+          <div class="error-message">Enter a valid email address</div>
+        </div>
+
+        <div class="input-group" id="signUpPasswordGroup">
+          <input type="password" id="signUpPassword" required placeholder=" ">
+          <label for="signUpPassword">Password</label>
+          <div class="password-toggle" id="signUpPasswordToggle" aria-label="Toggle Password Visibility">
+            <svg class="eye-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+            <svg class="eye-closed" style="display: none;" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.542-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+            </svg>
+          </div>
+          <div class="error-message">Password must be at least 8 characters</div>
+        </div>
+
+        <button type="submit" class="btn" id="signUpBtn">
+          <span class="btn-text">Sign Up</span>
+          <div class="btn-spinner"></div>
+          <svg class="btn-success-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Sign In Form (Left side initially shown, moves right when active) -->
+    <div class="form-container sign-in-container">
+      <form id="signInForm" autocomplete="off" novalidate>
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Enter your credentials to access your terminal</p>
+
+        <div class="social-container">
+          <button type="button" class="social-btn" aria-label="Sign In with Google" id="googleSignIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114-3.23 0-5.854-2.624-5.854-5.854s2.624-5.854 5.854-5.854c1.47 0 2.8.544 3.82 1.436l3.078-3.078C18.877 3.327 15.73 2 12.24 2 6.584 2 2 6.584 2 12.24s4.584 10.24 10.24 10.24c5.795 0 10.24-4.114 10.24-10.24 0-.69-.07-1.353-.193-1.955H12.24z" />
+            </svg>
+          </button>
+          <button type="button" class="social-btn" aria-label="Sign In with GitHub" id="githubSignIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </button>
+          <button type="button" class="social-btn" aria-label="Sign In with Apple" id="appleSignIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M17.05 20.28c-.98.95-2.05 1.88-3.08 1.88-1.02 0-1.4-.62-2.52-.62-1.13 0-1.55.6-2.5.62-1.02.02-2.2-.99-3.2-1.9-2.02-1.89-3.56-5.32-3.56-8.52 0-5.07 3.3-7.75 6.42-7.75 1.05 0 2.03.39 2.68.74.65.35 1.48.74 2.37.74.88 0 1.58-.34 2.27-.72.82-.47 1.95-.91 3.22-.64.53.22 2 .85 2.94 2.24a.26.26 0 0 1-.1.35c-1.39.81-2.24 2.12-2.24 3.75s1.08 2.85 2.45 3.52c.07.03.11.1.08.18-.46 1.34-1.51 3.12-2.51 4.1zm-3.32-15.65c.8-1 1.32-2.39 1.13-3.73-.02-.1-.1-.17-.2-.15-1.3.1-2.58.89-3.23 1.72-.75.92-1.23 2.3-1.02 3.63.02.1.1.16.2.14 1.25-.09 2.39-.81 3.12-1.61z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="divider">
+          <span>or use credentials</span>
+        </div>
+
+        <div class="input-group" id="signInEmailGroup">
+          <input type="email" id="signInEmail" required placeholder=" ">
+          <label for="signInEmail">Email Address</label>
+          <div class="error-message">Enter a valid email address</div>
+        </div>
+
+        <div class="input-group" id="signInPasswordGroup">
+          <input type="password" id="signInPassword" required placeholder=" ">
+          <label for="signInPassword">Password</label>
+          <div class="password-toggle" id="signInPasswordToggle" aria-label="Toggle Password Visibility">
+            <svg class="eye-open" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+            <svg class="eye-closed" style="display: none;" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.542-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+            </svg>
+          </div>
+          <div class="error-message">Please enter your password</div>
+        </div>
+
+        <a href="#" class="forgot-password">Forgot your password?</a>
+
+        <button type="submit" class="btn" id="signInBtn">
+          <span class="btn-text">Sign In</span>
+          <div class="btn-spinner"></div>
+          <svg class="btn-success-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Sliding Panel Overlay (Moves left when active, contains triggers to swipe) -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <!-- Three.js 3D Interactive Canvas -->
+        <div id="canvas3d"></div>
+
+        <!-- Welcome back trigger panel (revealed on Left when container slides right) -->
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>Maintain your connection to the grid. Authenticate with your credentials and monitor your systems.(made by
+            PiyushSoni)</p>
+          <button class="btn-ghost" id="signInTrigger">Sign In</button>
+        </div>
+
+        <!-- Hello friend trigger panel (revealed on Right when container slides left) -->
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Explorer!</h1>
+          <p>Embark on your voyage. Establish a new key to unlock your personal quantum dashboard.(made by PiyushSoni)
+          </p>
+          <button class="btn-ghost" id="signUpTrigger">Sign Up</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Three.js Core library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

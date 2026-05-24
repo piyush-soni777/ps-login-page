@@ -3,6 +3,12 @@
 A futuristic and animated Login & Signup Page built using **HTML, CSS, and JavaScript**.
 This project features a modern glassmorphism UI, glowing gradients, smooth transitions, floating cosmic particles, and an interactive authentication layout inspired by sci-fi dashboards and space themes.
 
+---
+## live preview:-
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/21c64165-a8f2-4d36-98a5-890ea652ed7a" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/729505ae-46ea-4ec7-a354-debb3f246503" />
+
+---
 
 ## ✨ Features
 

@@ -222,12 +222,12 @@ h1 {
   transition: var(--transition-smooth);
 }
 
-.social-btn:hover {
+.social-btn:hover{
   background: rgba(255, 255, 255, 0.1);
   border-color: var(--accent-indigo);
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
-  color: #fff;
+  color: #fff ;
 }
 
 .social-btn:active {
